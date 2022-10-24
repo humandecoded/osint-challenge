@@ -119,23 +119,3 @@ For checking large numbers of tweets (> than 800) you'll need to use web proxies
  - Custom date range is not about when Tweets were made, but rather when they were _archived_. For example, a Tweet from 2011 may have been archived today.
 
 
-## Usage
->    twayback -u USERNAME [OPTIONS]
-
-    -u, --username                                        Specify target user's Twitter handle
-
-    --batch-size                                          Specify how many URLs you would like to
-                                                          examine at a time. Expecting an integer between
-                                                          1 and 100. A larger number will give you a speed
-                                                          boost but at the risk of errors. Default = 100
-
-    --semaphore-size                                      Specify how many urls from --batch-size you would
-                                                          like to query asyncronously at once. Expecting an integer
-                                                          between 1 and 50. A larger number will give you a speed
-                                                          boost but at the risk of errors. Default = 50
-
-    -from, --fromdate                                     Narrow search for deleted Tweets *archived*
-                                                          on and after this date
-                                                          (can be combined with -to)
-                                                          (format YYYY-MM-DD or YYYY/MM/DD
-                                                          or YYYYMMDD, doesn't matter)
